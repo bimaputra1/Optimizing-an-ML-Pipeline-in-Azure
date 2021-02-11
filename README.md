@@ -10,12 +10,12 @@ This dataset contains data about direct phone call marketing of a Portuguese ban
 
 In this project we aim to predict whether the customer decided to subrcribe to the bank's product or not.
 
-The best performing model was a 
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
-
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The experiment was used both hyperdrive run and automl run. As a result, the best performing model was Voting Ensemble by automl with an accuracy of 0.9173
 
 ## Scikit-learn Pipeline
+
+
+
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
 **What are the benefits of the parameter sampler you chose?**
@@ -32,5 +32,4 @@ The best performing model was a
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
 
 ## Proof of cluster clean up
-**If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
-**Image of cluster marked for deletion**
+The cluster clean up code was included in the notebook and excecuted at the end of the code.
