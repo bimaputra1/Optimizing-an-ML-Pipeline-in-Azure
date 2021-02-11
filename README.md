@@ -14,11 +14,26 @@ The experiment was used both hyperdrive run and automl run. As a result, the bes
 
 ## Scikit-learn Pipeline
 
+**The pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
+The pipeline was followed this order:
+- Import Data
+- Cleaning Data
+- Data Split for training and testing
+- Setting sampling parameter
+- Create instance for logistic regression
+- Model fitting
+- Checking model accuracy
+- Export best selected model
 
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+The parameters used to tune the hyperparameter tuning were C and max_iter. C is an inverse of regularization strength, where smaller values specify stronger regularization, while max_iter specifies the number of maximum iterations that can be taken for the solvers to converge.
+
+This experiment used Logistic regression as classification algorithm, since it is a good type of model for binary classification. It transforms its output using the logistic sigmoid function to return a probability value.
+
 
 **What are the benefits of the parameter sampler you chose?**
+
+The random sampling method was chosen in this case particularly because of the limited time available to do the run. This method uses less computation resources and takes less time, compared to other sampling methods such as grid sampling. This is due to the fact that random sampling randomly selects hyperparameter values from the defined seach space, while grid sampling performs a simple but exhaustive grid search over all possible values.
 
 **What are the benefits of the early stopping policy you chose?**
 
