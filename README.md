@@ -10,7 +10,7 @@ This dataset contains data about direct phone call marketing of a Portuguese ban
 
 In this project we aim to predict whether the customer decided to subrcribe to the bank's product or not.
 
-The experiment compared both hyperdrive run and automl run. As a result, the best performing model was the AutoML method and Voting Ensemble model with an accuracy of 0.9173
+The experiment compared both hyperdrive run and automl run. As a result, the best performing model was the AutoML method and LightGBM model with an accuracy of 0.9167
 
 ## Scikit-learn Pipeline
 
@@ -39,15 +39,13 @@ The random sampling method was chosen in this case because of the limited time a
 The Bandit policy saves time and computation resources in running models that do not perform well, since it stops those models early, as soon as they are showing bad results.
 
 ## AutoML
-AutoML ran various algorithms with relatively simple code.In totals, the AutoML ran and generates 25 models. These model then compared based on the results to decided the best model. In this case, the choosen best model was "Voting Ensemble".
-
-Voting ensemble is one example of ensemble learning methods that combines different algorithms results and the results was the most voted class from the different models.
+AutoML ran various algorithms with relatively simple code.In totals, the AutoML ran and generates 24 models. These model then compared based on the results to decided the best model. In this case, the choosen best model was "LightGBM model".
 
 ## Pipeline comparison
 
 The experiment was used both hyperdrive run and automl run. As a result, the best performing model for each methoeds were:
 - Logistic Regression with a C value of 2.0 and max_iter of 50 which get  accuracy 0.912
-- Best algorithm with AutoML was Voting Ensemble with an accuracy of 0.9173
+- Best algorithm with AutoML was LightGBM with an accuracy of 0.9167
 
 So, we can decide that the best model is with an accuracy of
 
