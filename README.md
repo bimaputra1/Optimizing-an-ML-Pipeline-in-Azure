@@ -46,7 +46,7 @@ Voting ensemble is one example of ensemble learning methods that combines differ
 ## Pipeline comparison
 
 The experiment was used both hyperdrive run and automl run. As a result, the best performing model for each methoeds were:
-- Logistic Regression with a C value of 4.0 and max_iter of 50 which get  accuracy 0.915
+- Logistic Regression with a C value of 2.0 and max_iter of 50 which get  accuracy 0.912
 - Best algorithm with AutoML was Voting Ensemble with an accuracy of 0.9173
 
 So, we can decide that the best model is with an accuracy of
